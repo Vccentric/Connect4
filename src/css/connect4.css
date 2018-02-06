@@ -1,0 +1,118 @@
+/**
+ * Connect4 v1.0.0
+ * CSS file for the jQuery plugin: Connect4
+ *
+ * @author      Christopher Viray
+ * @copyright   (c) 2018 Christopher Viray
+ * @license     MIT
+ * @version     1.0.0
+ */
+
+.game_title {
+    margin-left: 10px;
+}
+
+.game {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.game .left_section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.game .right_section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.game_board {
+    background-color:#1e90ff;
+}
+
+.game_board .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.game_board .square {
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-color:white;
+    border: 6px double white;
+    padding:0;
+    margin:4px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.game_board .square.red {
+    background-color: red;
+    border-color: #4b4a4a;
+}
+
+.game_board .square.yellow {
+    background-color: yellow;
+    border-color: #4b4a4a;
+}
+
+.game_board .square.red.winner {
+    background-color: red;
+    border-color: red;
+}
+
+.game_board .square.yellow.winner {
+    background-color: yellow;
+    border-color: yellow;
+}
+
+#game_display {
+    background-color:#f8f8f8;
+    padding:10px;
+    text-align:center;
+    color:black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 1px solid #999;
+    border-bottom: 4px solid #999;
+}
+
+#restart {
+    padding:10px;
+    text-align:center;
+    font-size: 1.5em;
+    cursor:pointer;
+}
+
+.game_info {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.game_info .list_title {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 1px solid #999;
+    border-bottom: 4px solid #999;
+    width: 200px;
+}
+
+#moves_list {
+    height:398px;
+    max-height: 398px;
+    border: 1px solid #999;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#moves_list li {
+    margin:4px 0;
+}
